@@ -128,3 +128,7 @@ footer a{color:#9db4ff}
   .about,.item{grid-template-columns:1fr;gap:28px}.item.flip .media{order:0}
   .hero{padding:60px 0}.hero p{font-size:17px}html[data-theme="modern"] .item{padding:20px}
 }
+
+/* show only panel A (top ~41%) of the tall 3-panel aurora figure */
+.crop-a{aspect-ratio:476/282;overflow:hidden}
+.crop-a img{width:100%;height:auto;display:block;border-radius:0}
