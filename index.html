@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="modern">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>James Mang</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:site_name" content="James Mang">
+<meta property="og:url" content="https://james-mang.github.io/">
+<meta property="og:image" content="https://james-mang.github.io/jupiter-512.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"James Mang","alternateName":"James Mang | Astronomy","url":"https://james-mang.github.io/"}</script>
+<meta name="description" content="James Mang | Ph.D. Candidate @ UT Austin | Exoplanet Atmospheres">
+<link rel="canonical" href="https://james-mang.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="James Mang">
+<meta property="og:description" content="James Mang | Ph.D. Candidate @ UT Austin | Exoplanet Atmospheres">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"James Mang",
+ "jobTitle":"Ph.D. Candidate, Astronomy","affiliation":{"@type":"CollegeOrUniversity","name":"The University of Texas at Austin"},
+ "email":"mailto:j_mang@utexas.edu",
+ "sameAs":["https://orcid.org/0000-0001-5864-9599","https://scholar.google.com/citations?user=YVD0pIUAAAAJ","https://ui.adsabs.harvard.edu/search/q=author%3A%22Mang%2C%20James%22"]}
+</script>
+<!-- Google Analytics 4: paste your Measurement ID (looks like G-XXXXXXXXXX) between the quotes. Empty = off. -->
+<script>
+var GA_ID='G-RBXXLQKXZ8';
+if(GA_ID){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',GA_ID);}
+</script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">James Mang</a>
+  <nav>
+    <a href="#top">Home</a><a href="#about">About Me</a><a href="#research">Research</a>
+    <a href="assets/James_Mang_CV.pdf">CV</a><a href="mailto:j_mang@utexas.edu">Contact</a>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="stars"></div><canvas id="space" aria-hidden="true"></canvas><div class="bd" aria-hidden="true"><canvas id="bd" width="320" height="320"></canvas></div><div class="planet p1"></div><div class="planet p2"></div>
+  <div class="hero-inner">
+    <h1>Hi, I'm James Mang</h1>
+    <p>I am a sixth-year Astronomy graduate student and NSF Graduate Research Fellow at the University of Texas at Austin working with <a href="https://astronomy.utexas.edu/directory/caroline-morley">Prof. Caroline Morley</a>. I'm interested in the characterization of exoplanet atmospheres to deepen our understanding of these distant worlds.</p>
+    <p>If you are interested in my work or potential collaborations, please take a look at my <a href="assets/James_Mang_CV.pdf">CV</a> or <a href="mailto:j_mang@utexas.edu">contact me</a>!</p>
+    <div class="btns">
+      <a class="btn ads" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Mang%2C%20James%22&sort=date%20desc%2C%20bibcode%20desc"><img src="assets/logo-ads.png" alt="" height="26">NASA ADS</a>
+      <a class="btn orcid" href="https://orcid.org/0000-0001-5864-9599"><img src="assets/logo-orcid.png" alt="" height="26">ORCID iD</a>
+      <a class="btn scholar" href="https://scholar.google.com/citations?user=YVD0pIUAAAAJ&hl=en"><img src="assets/logo-scholar-white.png" alt="" height="26">Google Scholar</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="wrap about">
+  <div>
+    <span class="rule"></span>
+    <h2>About Me</h2>
+    <p>I study the atmospheres of ultra-cool brown dwarfs and temperate giant exoplanets. I'm interested in how their chemistry, clouds, and atmospheric dynamics shape the spectra we see. With JWST, we are now directly imaging benchmark systems that approach true Solar System analogs, and I use these objects to better understand the diversity and formation of cold substellar objects.</p>
+    <p>My current work focuses on water cloud formation in these cold atmospheres and how it impacts observations. I also develop open-source frameworks like <a href="https://natashabatalha.github.io/picaso/">PICASO</a>, and generate atmospheric models to interpret JWST data and prepare for future observations with the Nancy Grace Roman Space Telescope and upcoming Extremely Large Telescopes.</p>
+  </div>
+  <figure class="photo"><img src="assets/headshot.jpg" alt="James Mang" onerror="this.parentNode.classList.add('missing')"><span>Headshot</span></figure>
+</section>
+
+<section id="research" class="research">
+  <div class="wrap">
+    <h2 class="center">My Research</h2>
+
+    <article class="item">
+      <div class="media"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/1j68QD62O74" title="Modeling Water Clouds in Substellar Atmospheres in the Era of JWST (Sagan Workshop)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
+      <div>
+        <h3>Studying H<sub>2</sub>O Cloud Formation &amp; Properties</h3>
+        <p>Water clouds are expected to form in cool brown dwarfs and giant planets with T<sub>eff</sub> &lt; 450 K. Cloud distributions are controlled by microphysical processes such as nucleation and condensation, which hasn't been considered in detail for water clouds in H/He atmospheres. In the first paper (left), I investigate the impact of including microphysical water clouds in the atmosphere. In the second paper (right), I provide recommendations for the best practices to include water clouds in these atmospheres when using parameterized cloud models. Our results are the first step towards constraining water clouds' impact on cooler worlds to inform observations by JWST.</p>
+        <p class="links"><a class="chip" href="https://ui.adsabs.harvard.edu/abs/2022ApJ...927..184M/abstract">Paper I · ADS</a><a class="chip" href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..190M/abstract">Paper II · ADS</a></p>
+      </div>
+    </article>
+
+    <article class="item flip">
+      <div class="media fig"><img src="https://static.wixstatic.com/media/a7b62b_34387c5bd0684970bab024e36d89f341~mv2.png" alt="Cloud model figure from PICASO work" loading="lazy" onerror="this.parentNode.classList.add('missing')"><span>PICASO figure</span></div>
+      <div>
+        <h3>Developing Climate Modeling Tools</h3>
+        <p>I am committed to open science and developing open-source software that enables others to validate, reproduce, and build on our work. In this spirit, I was the lead developer of <a href="https://natashabatalha.github.io/picaso/">PICASO 4.0</a>, the latest version of the climate modeling and spectral synthesis framework. PICASO 4.0 is a fully open-source, self-consistent, cloud-coupled climate modeling framework. It also introduces new capabilities, including flexible chemical prescriptions, photochemistry, and parameterized external energy injection. For more details on these updates, see the paper below.</p>
+        <p class="links"><a class="chip" href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1000...98M/abstract">PICASO 4.0 · ADS</a></p>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="media fig"><img src="https://arxiv.org/html/2608.06454v1/fs_all_mh0_vs_mh2_deq_v2.svg" alt="Sonora Flame Skimmer spectral sequence (Mang et al. 2026, Fig. 6)" loading="lazy" onerror="this.parentNode.classList.add('missing')"><span>Flame Skimmer figure</span></div>
+      <div>
+        <h3>Generating Atmospheric &amp; Evolutionary Models</h3>
+        <p>Using PICASO, I am developing the next generation of Sonora models, Sonora Flame Skimmer. This new grid is designed to interpret the unprecedented detail revealed by JWST observations of ultra-cool substellar objects, including newly imaged planets that resemble the gas and ice giants in our Solar System. Sonora Flame Skimmer extends to temperatures as low as 50 K and surface gravities down to log(g) = 2, spanning a wide range of metallicities ([M/H] = −1 to +2) and including both equilibrium and disequilibrium chemistry.</p>
+        <p class="links"><a class="chip" href="https://ui.adsabs.harvard.edu/abs/2026arXiv260806454M/abstract">Sonora Flame Skimmer · ADS</a></p>
+      </div>
+    </article>
+
+    <article class="item flip">
+      <div class="media fig"><img src="https://arxiv.org/html/2609.17702v1/WISE1935_combined_deq_v4.svg" alt="WISE 1935 pressure-temperature profiles vs. auroral heating models (Zuckerman et al. 2026, Fig. 3)" loading="lazy" onerror="this.parentNode.classList.add('missing')"><span>Aurora figure</span></div>
+      <div>
+        <h3>Investigating Heating Mechanisms of Isolated Brown Dwarfs</h3>
+        <p>Early JWST observations of the coldest brown dwarfs have revealed surprising features, including CH<sub>4</sub> seen in emission. This was first identified in WISE 1935, an isolated brown dwarf, and similar signs of a thermal inversion have been suggested in the T dwarf SIMP 0136. Methane emission indicates that the upper atmosphere is being heated but the source of that heating remains unclear. My work explores whether aurorae could be responsible. I use atmospheric models that simulate energy deposition from electron beams, similar to auroral processes, to test whether they can provide enough energy to heat the upper atmospheres of objects like WISE 1935 and reproduce the observed thermal inversions.</p>
+        <p class="links"><a class="chip" href="https://ui.adsabs.harvard.edu/abs/2026arXiv260917702Z/abstract">Aurora heating · ADS</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><b>James Mang</b><br><a href="mailto:j_mang@utexas.edu">j_mang@utexas.edu</a><br>Department of Astronomy<br>The University of Texas at Austin</div>
+    <small>© 2026 by James Mang</small>
+  </div>
+</footer>
+<script>
+/* Animated space background (video substitute): drifting parallax stars, twinkle, occasional shooting star. */
+(function(){
+  var c=document.getElementById('space'); if(!c) return;
+  var x=c.getContext('2d'), reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W,H,stars=[],shoot=null,dpr=Math.min(window.devicePixelRatio||1,2);
+  function size(){var r=c.parentNode.getBoundingClientRect();W=r.width;H=r.height;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);
+    var n=Math.round(W*H/2600);stars=[];for(var i=0;i<n;i++){var z=Math.random();stars.push({x:Math.random()*W,y:Math.random()*H,z:z,r:.3+z*1.3,s:.03+z*.22,p:Math.random()*6.28,t:.6+Math.random()*1.6});}}
+  function draw(t){
+    x.clearRect(0,0,W,H);
+    for(var i=0;i<stars.length;i++){var s=stars[i];
+      if(!reduce){s.x-=s.s;if(s.x<-2)s.x=W+2;}
+      var a=.35+.65*(.5+.5*Math.sin(s.p+t/1000*s.t));
+      x.globalAlpha=a*(.4+s.z*.6);x.fillStyle=s.z>.85?'#ffe9b8':'#fff';
+      x.beginPath();x.arc(s.x,s.y,s.r,0,6.283);x.fill();}
+    x.globalAlpha=1;
+    if(!reduce){
+      if(!shoot&&Math.random()<.003)shoot={x:Math.random()*W*.8+W*.2,y:Math.random()*H*.4,l:0};
+      if(shoot){shoot.x-=9;shoot.y+=4;shoot.l++;var g=x.createLinearGradient(shoot.x,shoot.y,shoot.x+70,shoot.y-31);
+        g.addColorStop(0,'rgba(255,255,255,.9)');g.addColorStop(1,'rgba(255,255,255,0)');
+        x.strokeStyle=g;x.lineWidth=1.5;x.beginPath();x.moveTo(shoot.x,shoot.y);x.lineTo(shoot.x+70,shoot.y-31);x.stroke();
+        if(shoot.l>60)shoot=null;}
+      requestAnimationFrame(draw);}
+  }
+  size();draw(0);window.addEventListener('resize',function(){size();if(reduce)draw(0);});
+})();
+</script>
+<script>
+/* Rotating Jupiter-like brown dwarf: procedural banded texture with storms, differential rotation, limb darkening. */
+(function(){
+  var cv=document.getElementById('bd'); if(!cv) return;
+  var ctx=cv.getContext('2d'),N=cv.width,R=N/2-4,C=N/2,PI=Math.PI;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function H(i,j,k){var n=(Math.imul(i,374761393)+Math.imul(j,668265263)+Math.imul(k,1442695041))|0;n=Math.imul(n^(n>>>13),1274126177);return((n^(n>>>16))>>>0)/4294967296;}
+  function sm(t){return t*t*(3-2*t);}
+  function noise(x,y,z){var i=Math.floor(x),j=Math.floor(y),k=Math.floor(z),fx=sm(x-i),fy=sm(y-j),fz=sm(z-k);
+    function L(a,b,t){return a+(b-a)*t;}
+    return L(L(L(H(i,j,k),H(i+1,j,k),fx),L(H(i,j+1,k),H(i+1,j+1,k),fx),fy),L(L(H(i,j,k+1),H(i+1,j,k+1),fx),L(H(i,j+1,k+1),H(i+1,j+1,k+1),fx),fy),fz);}
+  function fbm(x,y,z){var s=0,a=.5;for(var o=0;o<4;o++){s+=a*noise(x,y,z);x*=2;y*=2;z*=2;a*=.5;}return s;}
+  var TW=512,TH=256,tex=new Uint8ClampedArray(TW*TH*3);
+  var pal=[[52,24,12],[118,54,28],[188,108,56],[232,184,126],[247,228,188]];
+  var storms=[{u:.32,l:-.42,rx:.06,ry:.075,c:[176,60,34]},{u:.78,l:.52,rx:.035,ry:.045,c:[246,236,216]},
+              {u:.58,l:-.08,rx:.025,ry:.03,c:[66,28,22]},{u:.08,l:.22,rx:.04,ry:.035,c:[240,224,198]}];
+  for(var v=0;v<TH;v++){var lat=(.5-(v+.5)/TH)*PI;
+    for(var u=0;u<TW;u++){var a=2*PI*u/TW,px=Math.cos(a)*1.2,pz=Math.sin(a)*1.2;
+      var w=fbm(px*1.4,lat*1.6+3,pz*1.4)-.5,band=Math.sin(lat*11+w*5),t2=fbm(px*6,lat*14,pz*6)-.5;
+      var s=.5+.36*band+.34*t2;s=s*(1-Math.min(1,Math.pow(Math.abs(lat)/1.57,4)))+.3*Math.min(1,Math.pow(Math.abs(lat)/1.57,4));
+      s=Math.max(0,Math.min(.9999,s))*(pal.length-1);var i=s|0,f=s-i,p0=pal[i],p1=pal[i+1];
+      var r=p0[0]+(p1[0]-p0[0])*f,g=p0[1]+(p1[1]-p0[1])*f,b=p0[2]+(p1[2]-p0[2])*f;
+      for(var q=0;q<storms.length;q++){var S=storms[q],du=u/TW-S.u;du-=Math.round(du);
+        var ex=du/S.rx,ey=(lat-S.l)/S.ry,d=ex*ex+ey*ey;
+        if(d<1.5){var k=d<1?(1-d):0,sw=.5+.5*Math.sin(Math.atan2(ey,ex)*2+d*7),m=k*(.55+.35*sw);
+          if(d>.8&&d<1.3){var rg=1-Math.abs(d-1.05)/.25;r+=(246-r)*rg*.35;g+=(224-g)*rg*.35;b+=(190-b)*rg*.35;}
+          r+=(S.c[0]-r)*m;g+=(S.c[1]-g)*m;b+=(S.c[2]-b)*m;}}
+      var o=(v*TW+u)*3;tex[o]=r;tex[o+1]=g;tex[o+2]=b;}}
+  var T=.21,cT=Math.cos(T),sT=Math.sin(T),L=[-.55,-.35,.76],ll=Math.hypot(L[0],L[1],L[2]);L=[L[0]/ll,L[1]/ll,L[2]/ll];
+  var px_=[],P=[];
+  for(var y=0;y<N;y++)for(var x=0;x<N;x++){
+    var dx=(x+.5-C)/R,dy=(y+.5-C)/R,rr=Math.sqrt(dx*dx+dy*dy),al=Math.max(0,Math.min(1,(R+1-rr*R)));if(al<=0)continue;
+    var nx=dx/Math.max(1,rr),ny=dy/Math.max(1,rr),nz=Math.sqrt(Math.max(0,1-nx*nx-ny*ny));
+    var xp=nx*cT-ny*sT,yp=nx*sT+ny*cT,lt=Math.asin(Math.max(-1,Math.min(1,-yp))),ln=Math.atan2(xp,nz);
+    var dot=nx*L[0]+ny*L[1]+nz*L[2],sh=Math.max(.05,Math.min(1,dot*1.05+.12))*Math.pow(nz,.32),rim=Math.pow(1-nz,3)*.5*Math.max(.2,dot+.3);
+    P.push({o:(y*N+x)*4,ln:ln/(2*PI),row:Math.max(0,Math.min(TH-1,Math.floor((.5-lt/PI)*TH))),sh:sh,rim:rim,al:al*255,df:1+.14*Math.cos(lt*2)});}
+  var img=ctx.createImageData(N,N),D=img.data,rot=0,last=0,vis=true;
+  function paint(){for(var i=0;i<P.length;i++){var p=P[i],uu=p.ln+rot*p.df;uu-=Math.floor(uu);
+      var t=(p.row*TW+((uu*TW)|0))*3,o=p.o;
+      D[o]=Math.min(255,tex[t]*p.sh+255*p.rim);D[o+1]=Math.min(255,tex[t+1]*p.sh+150*p.rim);D[o+2]=Math.min(255,tex[t+2]*p.sh+70*p.rim);D[o+3]=p.al;}
+    ctx.putImageData(img,0,0);}
+  if(reduce){rot=.12;paint();return;}
+  if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;}).observe(cv);
+  function frame(t){if(vis){rot+=(t-last)/1000*.022;paint();}last=t;requestAnimationFrame(frame);}
+  paint();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
