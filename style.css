@@ -130,5 +130,9 @@ footer a{color:#9db4ff}
 }
 
 /* show only panel A (top ~41%) of the tall 3-panel aurora figure */
-.crop-a{aspect-ratio:476/282;overflow:hidden}
+.crop-a{overflow:visible}
 .crop-a img{width:100%;height:auto;display:block;border-radius:0}
+
+/* one-line hero title at every width */
+.hero h1{white-space:nowrap;width:max-content;max-width:100vw;position:relative;left:50%;transform:translateX(-50%);
+  font-size:clamp(17px,calc((100vw - 40px)/15.8),56px);letter-spacing:.12em}
