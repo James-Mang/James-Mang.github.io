@@ -158,3 +158,4 @@ footer a{color:#9db4ff}
   .edu-grid{grid-template-columns:1fr;gap:28px}
   .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.metric-grid li:last-child{grid-column:1/-1}
 }
+.metric-grid i{text-transform:none;font-style:italic;letter-spacing:0}
