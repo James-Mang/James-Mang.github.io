@@ -168,7 +168,10 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
   var W,H,stars=[],shoot=null,dpr=Math.min(window.devicePixelRatio||1,2);
   function size(){var r=c.parentNode.getBoundingClientRect();W=r.width;H=r.height;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);
     var n=Math.round(W*H/2600);stars=[];for(var i=0;i<n;i++){var z=Math.random();stars.push({x:Math.random()*W,y:Math.random()*H,z:z,r:.3+z*1.3,s:.03+z*.22,p:Math.random()*6.28,t:.6+Math.random()*1.6});}}
+  var vis=true;
+  if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;}).observe(c);
   function draw(t){
+    if(!vis&&!reduce){requestAnimationFrame(draw);return;}
     x.clearRect(0,0,W,H);
     for(var i=0;i<stars.length;i++){var s=stars[i];
       if(!reduce){s.x-=s.s;if(s.x<-2)s.x=W+2;}
