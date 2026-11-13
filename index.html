@@ -45,7 +45,7 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 <header class="nav">
   <a class="brand" href="#top">James Mang</a>
   <nav>
-    <a href="#top">Home</a><a href="#about">About Me</a><a href="#research">Research</a>
+    <a href="#top">Home</a><a href="#about">About Me</a><a href="#education">Education</a><a href="#research">Research</a>
     <a href="assets/James_Mang_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a><a href="mailto:j_mang@utexas.edu">Contact</a>
   </nav>
 </header>
@@ -72,6 +72,56 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
     <p>My current work focuses on water cloud formation in these cold atmospheres and how it impacts observations. I also develop open-source frameworks like <a href="https://natashabatalha.github.io/picaso/" target="_blank" rel="noopener noreferrer">PICASO</a>, and generate atmospheric models to interpret JWST data and prepare for future observations with the Nancy Grace Roman Space Telescope and upcoming Extremely Large Telescopes.</p>
   </div>
   <figure class="photo"><img src="assets/headshot.jpg" alt="James Mang" onerror="this.parentNode.classList.add('missing')"><span>Headshot</span></figure>
+</section>
+
+<section id="stats" class="stats">
+  <div class="wrap">
+    <h2 class="center light">By the Numbers</h2>
+    <ul class="stat-grid">
+      <li><b data-count="5">5</b><span>First-Author Publications</span></li>
+      <li><b data-count="40">40</b><span>Total Publications<small>incl. 12 in review</small></span></li>
+      <li><b data-count="83">83</b><span>First-Author Citations</span></li>
+      <li><b data-count="767">767</b><span>Total Citations</span></li>
+      <li><b data-count="14">14</b><span>Total <i>h</i>-index</span></li>
+    </ul>
+    <p class="stat-note">Citation counts and <i>h</i>-index from <a href="https://scholar.google.com/citations?user=YVD0pIUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>, as of November 2026. First-author count includes co-first-author work.</p>
+  </div>
+</section>
+
+<section id="education" class="education">
+  <div class="wrap">
+    <span class="rule"></span>
+    <h2>Education</h2>
+    <ol class="timeline">
+      <li class="edu">
+        <div class="when">Expected 2027</div>
+        <div class="card">
+          <h3>Ph.D., Astronomy</h3>
+          <p class="school">The University of Texas at Austin</p>
+          <p><em>Dissertation:</em> Understanding Ultra-Cool Substellar Atmospheres in the Era of JWST</p>
+          <p><em>Advisor:</em> <a href="https://astronomy.utexas.edu/directory/caroline-morley" target="_blank" rel="noopener noreferrer">Dr. Caroline V. Morley</a></p>
+        </div>
+      </li>
+      <li class="edu">
+        <div class="when">2024</div>
+        <div class="card">
+          <h3>M.A., Astronomy</h3>
+          <p class="school">The University of Texas at Austin</p>
+          <p><em>Thesis:</em> Microphysical Prescriptions for Parameterized Water Cloud Formation on Ultra-cool Substellar Objects</p>
+          <p><em>Advisor:</em> <a href="https://astronomy.utexas.edu/directory/caroline-morley" target="_blank" rel="noopener noreferrer">Dr. Caroline V. Morley</a></p>
+        </div>
+      </li>
+      <li class="edu">
+        <div class="when">2021</div>
+        <div class="card">
+          <h3>B.A., Astrophysics</h3>
+          <h3 class="second">B.Sc., Chemistry</h3>
+          <p class="school">University of California, Berkeley <small>(two degrees, 2017&ndash;2021)</small></p>
+          <p><em>Mentor:</em> Dr. Peter Gao</p>
+        </div>
+      </li>
+    </ol>
+  </div>
 </section>
 
 <section id="research" class="research">
@@ -194,6 +244,19 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
   if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;}).observe(cv);
   function frame(t){if(vis){rot+=(t-last)/1000*.022;paint();}last=t;requestAnimationFrame(frame);}
   paint();requestAnimationFrame(frame);
+})();
+</script>
+<script>
+/* count-up for the stats strip (final numbers are already in the HTML; this only animates them) */
+(function(){
+  var els=document.querySelectorAll('[data-count]');
+  if(!els.length||!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;io.unobserve(e.target);
+    var el=e.target,end=+el.dataset.count,t0=null;
+    (function step(t){t0=t0||t;var p=Math.min(1,(t-t0)/1200),v=Math.round(end*(1-Math.pow(1-p,3)));el.textContent=v;if(p<1)requestAnimationFrame(step);})(performance.now());
+  });},{threshold:.4});
+  els.forEach(function(el){io.observe(el);});
 })();
 </script>
 </body>
