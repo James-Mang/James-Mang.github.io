@@ -161,7 +161,7 @@ footer a{color:#9db4ff}
 .metric-grid i{text-transform:none;font-style:italic;letter-spacing:0}
 
 /* sticky header: no backdrop blur over animated canvases (caused flicker); own compositing layer */
-html[data-theme="modern"] .nav{-webkit-backdrop-filter:none;backdrop-filter:none;background:#0a0c1a;
+html[data-theme="modern"] .nav{-webkit-backdrop-filter:none;backdrop-filter:none;background:#4a4e5e;
   -webkit-transform:translateZ(0);transform:translateZ(0);will-change:transform;backface-visibility:hidden}
 
 /* flat cards: no shadows on By the Numbers tiles and research cards */
